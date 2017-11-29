@@ -126,10 +126,10 @@ class ActivityQuiz : BaseActivity<QuizView.View,QuizView.Presenter>(),QuizView.V
     }
 
     public fun onClose( v : View){
-        makeDialog("Warning !!","Are you sure for finish this session ?")
+        makeDialog("Warning !!","Are you sure finish this session ?")
     }
 
     override fun onBackPressed() {
-        makeDialog("Warning !!","Are you sure for finish this session ?")
+        makeDialog("Warning !!","Are you sure finish this session ?")
     }
 }
