@@ -19,7 +19,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.View.OnTouchListener
 import android.widget.Toast
-import java.text.FieldPosition
+import com.eftimoff.viewpagertransformers.StackTransformer
 
 class ActivityQuiz : BaseActivity<QuizView.View,QuizView.Presenter>(),QuizView.View,CustomeViewPager.PagerListener, FragmentQuiz.OnFragmentInteractionListener {
     var items: ArrayList<Fragment> = ArrayList()
@@ -44,12 +44,13 @@ class ActivityQuiz : BaseActivity<QuizView.View,QuizView.Presenter>(),QuizView.V
         params.set("type","multiple")
         cpQuiz.setOnTouchListener(object : OnTouchListener {
             override fun onTouch(v: View, event: MotionEvent): Boolean {
-                cpQuiz.setCurrentItem(cpQuiz.currentItem,true)
+                cpQuiz.setCurrentItem(cpQuiz.currentItem,false)
                 return true
             }
-        });
-        mPresenter.getQuiz(params)
 
+        })
+
+        mPresenter.getQuiz(params)
         progress = ProgressDialog(this)
         progress.setMessage("Please waiting")
         progress.setProgressStyle(ProgressDialog.STYLE_SPINNER)
@@ -57,6 +58,8 @@ class ActivityQuiz : BaseActivity<QuizView.View,QuizView.Presenter>(),QuizView.V
         progress.setProgress(0)
         progress.setCanceledOnTouchOutside(false)
         progress.show()
+
+        cpQuiz.setPageTransformer(true,  StackTransformer())
     }
 
     override var mPresenter: QuizView.Presenter = QuizPresenter()
