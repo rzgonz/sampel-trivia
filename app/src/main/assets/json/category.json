@@ -1,0 +1,64 @@
+{
+  "trivia_categories": [
+    {
+      "id": 9,
+      "name": "General Knowledge",
+      "icon" : "ic_gk",
+      "image": "gk"
+    },
+    {
+      "id": 10,
+      "name": "Entertainment: Books",
+      "icon" : "ic_books",
+      "image": "books"
+    },
+    {
+      "id": 11,
+      "name": "Entertainment: Film",
+      "icon" : "ic_film",
+      "image": "film"
+    },
+    {
+      "id": 12,
+      "name": "Entertainment: Music",
+      "icon" : "ic_music",
+      "image": "music"
+    },
+    {
+      "id": 15,
+      "name": "Entertainment: Games",
+      "icon" : "ic_games",
+      "image": "games"
+    },
+    {
+      "id": 14,
+      "name": "Entertainment: Tv",
+      "icon" : "ic_tv",
+      "image": "tv"
+    },
+    {
+      "id": 18,
+      "name": "Science: Computers",
+      "icon" : "ic_computers",
+      "image": "computers"
+    },
+    {
+      "id": 26,
+      "name": "Celebrities",
+      "icon" : "ic_seleb",
+      "image": "seleb"
+    },
+    {
+      "id": 23,
+      "name": "History",
+      "icon" : "ic_history",
+      "image": "history"
+    },
+    {
+      "id": 27,
+      "name": "Animals",
+      "icon" : "ic_animal",
+      "image": "animal"
+    }
+  ]
+}
